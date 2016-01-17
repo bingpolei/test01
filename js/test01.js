@@ -3,8 +3,9 @@ function chg(){
     var blc=document.getElementById('fm');
     hid.style.display="block";
     blc.style.display="none";
+    return false;
 }
-$(document).ready(function() {
+
     var colors = ["#B8D430", "#3AB745", "#029990", "#3501CB", "#2E2C75", "#673A7E", "#CC0071", "#F80120", "#F35B20", "#FB9A00", "#FFCC00", "#FEF200"];
     var restaraunts = ["北京", "上海", "天津", "南京", "杭州", "深圳", "武汉", "济南", "重庆", "大连", "合肥", "郑洲"];
     var startAngle = 0;
@@ -15,6 +16,7 @@ $(document).ready(function() {
     var spinTimeTotal = 0;
     var ctx;
 
+    draw();
     function draw() {
         drawRouletteWheel();
     }
@@ -23,7 +25,7 @@ $(document).ready(function() {
     function drawRouletteWheel() {
         var canvas = document.getElementById("wheelcanvas");
         if (canvas.getContext) {
-            var outsideRadius = 240;
+            var outsideRadius = 250;
             var textRadius = 200;
             var insideRadius = 50;
             ctx = canvas.getContext("2d");
@@ -102,5 +104,4 @@ $(document).ready(function() {
         var tc = ts * t;
         return b + c * (tc + -3 * ts + 3 * t);
     }
-})
 

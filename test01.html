@@ -3,13 +3,10 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>测试01</title>
-    <link rel="stylesheet" href="css/test01.css" type="text/css"/>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="css/test01.css" type="text/css"/>
     <!--<link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/>-->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <!--<script type="text/javascript" src="js/jquery-ui.min.js"></script>-->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/test01.js"></script>
+
 </head>
 <body>
 <div id="bc">
@@ -19,36 +16,36 @@
         <div id="fm" style="display: block">
             <form class="form-horizontal" role="form">
                 <div class="form-group">
-                    <lable for="uname" class="col-xs-4 control-label">姓&nbsp;名</lable>
-                    <div class="col-xs-5">
+                    <lable for="uname" class="col-xs-5 control-label">姓&nbsp;名</lable>
+                    <div class="col-xs-6">
                         <input type="text" class="form-control" id="uname" placeholder="请输入姓名:"/>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <lable for="tel" class="col-xs-4 control-label">手机号</lable>
-                    <div class="col-xs-5">
+                    <lable for="tel" class="col-xs-5 control-label">手机号</lable>
+                    <div class="col-xs-6">
                         <input type="number" class="form-control" id="tel" placeholder="请输入手机号"/>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <lable for="carnb" class="col-xs-4 control-label">车牌号</lable>
-                    <div class="col-xs-5">
+                    <lable for="carnb" class="col-xs-5 control-label">车牌号</lable>
+                    <div class="col-xs-6">
                         <input type="text" class="form-control" id="carnb" placeholder="请输入车牌号"/>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <lable for="dt" class="col-xs-4  control-label">保险到期时间</lable>
-                    <div class="col-xs-5">
+                    <lable for="dt" class="col-xs-5  control-label">保险到期时间</lable>
+                    <div class="col-xs-6">
                         <input type="date" class="form-control" id="dt" placeholder="请选择"/>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <div class="col-xs-5 col-xs-offset-4">
-                        <button class="btn btn-default" type="submit" onclick="chg()">提交</button>
+                    <div class="col-xs-5 col-xs-offset-5">
+                        <button class="btn btn-default" type="submit" onclick="return chg();">提交</button>
                     </div>
                 </div>
             </form>
@@ -57,12 +54,12 @@
         <div class="row" style="display: none">
             <div class="col-xs-10 col-xs-push-2">
                 <canvas id="wheelcanvas" width="500" height="500"></canvas>
-                <div class="col-xs-4 col-xs-push-4">
+                <div class="col-xs-4 col-xs-push-3">
                     <input type="button" value="开始抽奖" onClick="spin()" />
                 </div>
             </div>
 
-            <div class="col-xs-4 col-xs-push-4">
+            <div class="col-xs-12">
                 <p>一等奖：500元保险代金券（满3500元以上可以使用)</p>
                 <p>二等奖：300元保险代金券（满2000元可以使用）</p>
                 <p>三等奖：150元保险代金券一张（保险满1000元可以使用）</p>
@@ -76,5 +73,9 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--<script type="text/javascript" src="js/jquery-ui.min.js"></script>-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/test01.js"></script>
 </body>
 </html>
